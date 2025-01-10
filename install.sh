@@ -53,13 +53,8 @@ startup_services()
 
 
 
-genpasswd() 
-{
-    length=$1
-    [ "$length" == "" ] && length=16
-    tr -dc A-Za-z0-9_ < /dev/urandom | head -c ${length} | xargs
-}
-password=$(genpasswd)
+
+password='Carteiro96632107@'
 
 if [ -e "/root/passwordMysql.log" ] && [ ! -z "/root/passwordMysql.log" ]
 then
