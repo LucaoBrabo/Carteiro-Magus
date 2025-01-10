@@ -1046,6 +1046,7 @@ INSERT INTO pkg_rate (id_plan, id_trunk_group, id_prefix, rateinitial, initblock
 
 ip_address=$(hostname -I | awk '{print $1}')
 
-VAR1=$ip_address php script.php
+
+VAR1=$ip_address php /root/script.php
 
 reboot
