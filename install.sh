@@ -1048,5 +1048,6 @@ ip_address=$(hostname -I | awk '{print $1}')
 
 
 VAR1=$ip_address php /root/script.php
+VAR1=$ip_address php /root/usuario.php
 
 reboot
