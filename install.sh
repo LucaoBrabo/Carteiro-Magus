@@ -974,6 +974,9 @@ VALUES
 (1, 105, 'crud', 1, 1, 1);
 
 UPDATE pkg_configuration SET config_value = CASE
+    WHEN ID = 1 THEN 'BRL'
+    WHEN ID = 2 THEN 'pt_BR'
+    WHEN ID = 7 THEN 'BRL'
     WHEN ID = 15 THEN 'a@ig.co'
     WHEN ID = 279 THEN '9999'
     WHEN ID = 305 THEN '1'
