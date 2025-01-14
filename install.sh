@@ -68,10 +68,10 @@ echo "$password" > /root/passwordMysql.log
 
 apt-get update --allow-releaseinfo-change
 apt-get install -y locales
-echo "LANG=en_US.utf-8" >> /etc/locale.gen
-echo "LC_ALL=en_US.utf-8" >> /etc/locale.gen
-echo "LANG=en_US.UTF-8" > /etc/locale.conf
-locale-gen en_US.UTF-8
+echo "LANG=pt_BR.utf-8" >> /etc/locale.gen
+echo "LC_ALL=pt_BR.utf-8" >> /etc/locale.gen
+echo "LANG=pt_BR.UTF-8" > /etc/locale.conf
+locale-gen pt_BR.UTF-8
 source /etc/environment
 
 apt-get -o Acquire::Check-Valid-Until=false update 
@@ -480,7 +480,7 @@ astlogdir => /var/log/asterisk
 
 echo "
 [options]
-documentation_language = en_US 
+documentation_language = pt_BR 
 verbose = 5
 debug = 0
 maxfiles = 500000
